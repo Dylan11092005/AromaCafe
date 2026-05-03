@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma de Café – Compañía Folclórica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts: Playfair Display para títulos, Lato para cuerpo -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========================================================
+       MENÚ DE NAVEGACIÓN
+       Para cambiar los nombres de las secciones, edita los
+       textos dentro de los <a> con clase nav-link.
+  ======================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <!-- LOGO: Reemplaza "img/logo.png" con la ruta de tu logo real -->
+        <div class="logo-circle">
+          <img src="img/logo.png" alt="Logo Aroma de Café" class="logo-img">
+        </div>
+        <span class="logo-text">Aroma de Café</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#trajes" class="nav-link">Trajes</a></li>
+        <li><a href="#aves" class="nav-link">Aves</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================================
+       SECCIÓN 1: INICIO / HERO
+       Cambia el subtítulo, la frase y los textos de los botones aquí.
+  ======================================================== -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <!-- IMAGEN DE FONDO HERO: Cambia la imagen en styles.css buscando .hero { background-image: ... } -->
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <!-- LOGO GRANDE: Reemplaza con <img src="img/logo.png" alt="Logo Aroma de Café" class="hero-logo-img"> -->
+        <div class="hero-logo-placeholder">
+          <img src="img/logo.png" alt="Logo Aroma de Café" class="hero-logo-img">
+        </div>
+      </div>
+      <h1 class="hero-title">Aroma de Café</h1>
+      <p class="hero-subtitle">Compañía Folclórica</p>
+      <p class="hero-phrase">"Tradición, danza y cultura costarricense<br>en cada movimiento"</p>
+      <div class="hero-buttons">
+        <a href="#trajes" class="btn btn-primary">Trajes por Provincia</a>
+        <a href="#aves" class="btn btn-secondary">Representaciones de Aves</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Descubre más</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 2: SOBRE NOSOTROS
+       Edita el texto dentro de los párrafos <p> para cambiar
+       la descripción de la agrupación.
+  ======================================================== -->
+  <section id="nosotros" class="section nosotros">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quiénes somos</span>
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <div class="title-ornament"></div>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text">
+          <!-- TEXTO: Edita estos párrafos con la historia real de la agrupación -->
+          <p class="lead-text">
+            Aroma de Café es una compañía folclórica costarricense dedicada a la preservación y difusión de las tradiciones culturales y dancísticas de Costa Rica.
+          </p>
+          <p>
+            Fundada con el amor por la tierra y sus raíces, nuestra agrupación interpreta la riqueza de las siete provincias a través de trajes auténticos, música vibrante y danzas que narran la historia de un pueblo lleno de color y alegría.
+          </p>
+          <p>
+            <!-- Agrega aquí más detalles: año de fundación, número de integrantes, logros, etc. -->
+            Aquí puedes escribir más sobre los fundadores, los años de trayectoria, participaciones en festivales nacionales e internacionales y los valores que guían a la agrupación.
+          </p>
+          <div class="nosotros-stats">
+            <!-- ESTADÍSTICAS: Cambia los números y etiquetas según la realidad del grupo -->
+            <div class="stat">
+              <span class="stat-num">7</span>
+              <span class="stat-label">Provincias representadas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Años de trayectoria</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">30+</span>
+              <span class="stat-label">Integrantes</span>
+            </div>
+          </div>
+        </div>
+        <div class="nosotros-img-wrap">
+            <img src="img/grupo.png" alt="Grupo Aroma de Café" class="nosotros-img">
+          </div>
+          <div class="img-frame-deco"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 3: TRAJES POR PROVINCIA
+       Para agregar una nueva provincia, copia un bloque
+       <div class="traje-card"> completo y edita su contenido.
+       Las imágenes van en img/trajes/nombre-provincia.jpg
+  ======================================================== -->
+  <section id="trajes" class="section trajes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Costa Rica</span>
+        <h2 class="section-title">Trajes por Provincia</h2>
+        <div class="title-ornament"></div>
+        <p class="section-desc">La indumentaria folclórica de cada provincia refleja su identidad, clima y tradiciones únicas.</p>
+      </div>
+      <div class="trajes-grid">
+
+        <!-- === TARJETA: CARTAGO ===
+             Imagen: img/trajes/cartago.jpg
+        -->
+        <div class="traje-card">
+          <div class="traje-img-wrap">
+            <img src="img/carta.png" alt="">
+            <div class="traje-provincia-badge">Cartago</div>
+          </div>
+          <div class="traje-info">
+            <h3 class="traje-nombre">Cartago</h3>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#0B0B0F;" title="Azul oscuro"></span>
+              <span class="color-dot" style="background:#C62828;" title="Plata"></span>
+              <span class="color-dot" style="background:#008C5A;" title="Crema"></span>
+              <span class="colores-label">Negro · Rojo · Verde</span>
+            </div>
+            <p class="traje-desc">Cartago, provincia histórica y de tradición, refleja en su traje folclórico un estilo elegante y sobrio. En la imagen se observa un vestuario con base negra, detalles en rojo y verde, además de una faja dorada que resalta la vestimenta. El traje femenino destaca por sus mangas amplias, encajes y adornos en el pecho, mientras que el masculino usa sombrero negro, camisa roja y detalles decorativos.</p>
+          </div>
+        </div>
+
+
+        <!-- === TARJETA: GUANACASTE ===
+             Imagen: img/trajes/guanacaste.jpg
+        -->
+        <div class="traje-card">
+          <div class="traje-img-wrap">
+            <img src="img/guana.png" alt="">
+            <div class="traje-provincia-badge">Guanacaste</div>
+          </div>
+          <div class="traje-info">
+            <h3 class="traje-nombre">Guanacaste</h3>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#ffffff;" title="camisa, saco y sombrero."></span>
+              <span class="color-dot" style="background:#FFD700;" title="falda principal de la mujer."></span>
+              <span class="color-dot" style="background:#000000;" title="pañuelo o lazo del sabanero."></span>
+              <span class="colores-label">Blanco · Amarillo · Negro</span>
+            </div>
+            <p class="traje-desc">Guanacaste, cuna de la identidad costarricense, destaca por su traje folclórico lleno de tradición y color. El sabanero representa al hombre de la pampa con sombrero, camisa blanca y pañuelo, mientras que la mujer luce la sayuela, una falda amplia y colorida que da movimiento al baile. Este vestuario simboliza la alegría, el orgullo y la cultura guanacasteca.</p>
+          </div>
+        </div>
+
+        <!-- === TARJETA: PUNTARENAS ===
+             Imagen: img/trajes/puntarenas.jpg
+        -->
+        <div class="traje-card">
+          <div class="traje-img-wrap">
+            <img src="img/punta.jpeg" alt="">
+            <div class="traje-provincia-badge">Puntarenas</div>
+          </div>
+          <div class="traje-info">
+            <h3 class="traje-nombre">Puntarenas</h3>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#FFFFFF;" title="Azul mar"></span>
+              <span class="color-dot" style="background:#B8B2D8;" title="Arena"></span>
+              <span class="color-dot" style="background:#1A1A1A;" title="Turquesa"></span>
+              <span class="colores-label">Mar · Arena · Turquesa</span>
+            </div>
+            <p class="traje-desc">Puntarenas, tierra de puerto y tradición costera, refleja en su traje folclórico la vida del pescador y la alegría del pueblo porteño. En la imagen se observa un vestuario sencillo y elegante: las mujeres usan blusa blanca, delantal, pañuelo en la cabeza y falda amplia color lila, mientras que los hombres representan al trabajador del puerto con camisa de cuadros, pantalón oscuro y pañuelo.</p>
+          </div>
+        </div>
+
+
+
+      </div><!-- fin trajes-grid -->
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 4: REPRESENTACIONES DE AVES
+       Para agregar un ave nueva, copia un bloque <div class="ave-card">
+       completo y edita nombre, rutas de imágenes y descripción.
+       Imágenes: img/aves/traje-nombreave.jpg  y  img/aves/ave-nombreave.jpg
+  ======================================================== -->
+  <section id="aves" class="section aves">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Naturaleza y Danza</span>
+        <h2 class="section-title">Representaciones de Aves</h2>
+        <div class="title-ornament"></div>
+        <p class="section-desc">Cada traje captura la majestuosidad de las aves más emblemáticas de Costa Rica, fundiendo la naturaleza con el arte folclórico.</p>
+      </div>
+      <div class="aves-grid">
+
+        <!-- === TARJETA AVE: LAPA ROJA ===
+             Traje:  img/aves/traje-lapa.jpg
+             Ave:    img/aves/ave-lapa.jpg
+        -->
+        <div class="ave-card">
+          <div class="ave-imagenes">
+            <div class="ave-img-wrap">
+              <!-- Reemplaza con: <img src="img/aves/traje-lapa.jpg" alt="Traje inspirado en la Lapa Roja"> -->
+              <img src="img/campana.png" alt="">
+              <span class="ave-img-label">El Traje</span>
+            </div>
+            <div class="ave-separador">
+              <span class="ave-separador-icon">↔</span>
+            </div>
+            <div class="ave-img-wrap">
+              <!-- Reemplaza con: <img src="img/aves/ave-lapa.jpg" alt="Lapa Roja"> -->
+              <img src="img/PaCampana.png" alt="">
+              <span class="ave-img-label">El Ave</span>
+            </div>
+          </div>
+          <div class="ave-info">
+            <!-- NOMBRES: Edita el nombre del ave y del traje -->
+            <h3 class="ave-nombre">Pajaro campana</h3>
+            <p class="ave-nombre-traje"><em>Nombre del traje:</em> "Campana"</p>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#4F7F2A;" title="Rojo"></span>
+              <span class="color-dot" style="background:#D6A400;" title="Naranja"></span>
+              <span class="color-dot" style="background:#C62828;" title="Azul"></span>
+              <span class="color-dot" style="background:#FFFFFF;" title="Verde"></span>
+              <span class="colores-label">Verde · Amarillo · Rojo · Blanco</span>
+            </div>
+            <!-- DESCRIPCIÓN: Edita este texto con la inspiración real del traje -->
+            <p class="ave-desc">Traje inspirado en el pájaro campana, representa la naturaleza, la vida del bosque y la elegancia de esta ave característica. El vestuario destaca por tonos verdes que simbolizan la vegetación, detalles amarillos que dan brillo y elementos rojos/blancos que aportan contraste y presencia escénica.</p>
+          </div>
+        </div>
+
+        <!-- === TARJETA AVE: COLIBRÍ ===
+             Traje:  img/aves/traje-colibri.jpg
+             Ave:    img/aves/ave-colibri.jpg
+        -->
+        <div class="ave-card">
+          <div class="ave-imagenes">
+            <div class="ave-img-wrap">
+              <img src="img/quetsal.png" alt="">
+              <span class="ave-img-label">El Traje</span>
+            </div>
+            <div class="ave-separador">
+              <span class="ave-separador-icon">↔</span>
+            </div>
+            <div class="ave-img-wrap">
+              <img src="img/PaQuetsal.png" alt="">
+              <span class="ave-img-label">El Ave</span>
+            </div>
+          </div>
+          <div class="ave-info">
+            <h3 class="ave-nombre">Quetzal</h3>
+            <p class="ave-nombre-traje"><em>Nombre del traje:</em> "Quetzal Resplandeciente"</p>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#009B8E;" title="Verde esmeralda"></span>
+              <span class="color-dot" style="background:#4CAF2F;" title="Rojo brillante"></span>
+              <span class="color-dot" style="background:#C62828;" title="Azul plateado"></span>
+              <span class="colores-label">Turquesa · Verde · Rojo</span>
+            </div>
+            <p class="ave-desc">Traje inspirado en el pájaro quetzal, representa la belleza natural, el colorido y la elegancia de esta ave. El vestuario destaca por tonos verdes y turquesas que recuerdan sus plumas, detalles rojos en el pecho y adornos negros/blancos que dan contraste y movimiento al baile.</p>
+          </div>
+        </div>
+
+        <!-- === TARJETA AVE: TUCÁN ===
+             Traje:  img/aves/traje-tucan.jpg
+             Ave:    img/aves/ave-tucan.jpg
+        -->
+        <div class="ave-card">
+          <div class="ave-imagenes">
+            <div class="ave-img-wrap">
+              <img src="img/aguila.png" alt="">
+              <span class="ave-img-label">El Traje</span>
+            </div>
+            <div class="ave-separador">
+              <span class="ave-separador-icon">↔</span>
+            </div>
+            <div class="ave-img-wrap">
+              <img src="img/PaAguila.png" alt="">
+              <span class="ave-img-label">El Ave</span>
+            </div>
+          </div>
+          <div class="ave-info">
+            <h3 class="ave-nombre">Aguila</h3>
+            <p class="ave-nombre-traje"><em>Nombre del traje:</em> "Aguila Elegante"</p>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#1A1A1A;" title="Negro"></span>
+              <span class="color-dot" style="background:#F1C40F;" title="Amarillo"></span>
+              <span class="color-dot" style="background:#E74C3C;" title="Rojo"></span>
+              <span class="color-dot" style="background:#FFFFFF;" title="Blanco"></span>
+              <span class="colores-label">Negro · Amarillo · Rojo · Blanco</span>
+            </div>
+            <p class="ave-desc">El Tucán Pico Iris es uno de los íconos de la fauna tropical costarricense. Este traje celebra su silueta inconfundible y el contraste dramático de su plumaje. Edita aquí la descripción de cómo se incorporan sus rasgos a la indumentaria dancística.</p>
+          </div>
+        </div>
+
+        <!--
+        ============================================================
+        INSTRUCCIÓN: Para agregar un ave nueva, copia desde aquí:
+
+        <div class="ave-card">
+          <div class="ave-imagenes">
+            <div class="ave-img-wrap">
+              <img src="img/aves/traje-NOMBREAVE.jpg" alt="Traje - NOMBRE DEL AVE">
+              <span class="ave-img-label">El Traje</span>
+            </div>
+            <div class="ave-separador"><span class="ave-separador-icon">↔</span></div>
+            <div class="ave-img-wrap">
+              <img src="img/aves/ave-NOMBREAVE.jpg" alt="NOMBRE DEL AVE">
+              <span class="ave-img-label">El Ave</span>
+            </div>
+          </div>
+          <div class="ave-info">
+            <h3 class="ave-nombre">NOMBRE DEL AVE</h3>
+            <p class="ave-nombre-traje"><em>Nombre del traje:</em> "NOMBRE DEL TRAJE"</p>
+            <div class="colores-rep">
+              <span class="color-dot" style="background:#COLOR1;"></span>
+              <span class="color-dot" style="background:#COLOR2;"></span>
+              <span class="colores-label">Color1 · Color2</span>
+            </div>
+            <p class="ave-desc">Descripción del ave y el traje...</p>
+          </div>
+        </div>
+
+        ============================================================
+        -->
+
+      </div><!-- fin aves-grid -->
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 5: GALERÍA
+       Para agregar imágenes, copia una <div class="galeria-item">
+       y cambia la ruta de la imagen.
+       Imágenes en: img/galeria/galeria-N.jpg
+  ======================================================== -->
+  <section id="galeria" class="section galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Momentos</span>
+        <h2 class="section-title">Galería</h2>
+        <div class="title-ornament"></div>
+        <p class="section-desc">Imágenes que capturan la esencia de Aroma de Café en cada presentación.</p>
+      </div>
+      <div class="galeria-grid">
+
+        <!-- Para agregar una imagen: copia este bloque y cambia el número -->
+        <div class="galeria-item galeria-wide">
+          <!-- Reemplaza con: <img src="img/galeria/galeria-1.jpg" alt="Descripción de la foto 1"> -->
+          <img src="img/galeria/anima.png" alt="">
+          <div class="galeria-overlay"><span>Foto 1</span></div>
+        </div>
+
+        <div class="galeria-item">
+          <img src="img/galeria/cafe.png" alt="">
+          <div class="galeria-overlay"><span>Foto 2</span></div>
+        </div>
+
+        <div class="galeria-item">
+          <img src="img/galeria/coli.png" alt="">
+          <div class="galeria-overlay"><span>Foto 3</span></div>
+        </div>
+
+        <div class="galeria-item">
+          <img src="img/galeria/mari.png" alt="">
+          <div class="galeria-overlay"><span>Foto 4</span></div>
+        </div>
+
+        <div class="galeria-item galeria-tall">
+          <img src="img/galeria/muerte.png" alt="">
+          <div class="galeria-overlay"><span>Foto 5</span></div>
+        </div>
+
+        <div class="galeria-item">
+          <img src="img/galeria/monte.png" alt="">
+          <div class="galeria-overlay"><span>Foto 6</span></div>
+        </div>
+
+        <div class="galeria-item">
+          <img src="img/galeria/monte2.png" alt="">
+          <div class="galeria-overlay"><span>Foto 7</span></div>
+        </div>
+
+        <div class="galeria-item galeria-wide">
+          <img src="img/galeria/paja.png" alt="">
+          <div class="galeria-overlay"><span>Foto 8</span></div>
+        </div>
+
+      </div><!-- fin galeria-grid -->
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECCIÓN 6: CONTACTO
+       Edita el correo, redes sociales y teléfono aquí directamente.
+  ======================================================== -->
+  <section id="contacto" class="section contacto">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag">Conéctate</span>
+        <h2 class="section-title">Contacto</h2>
+        <div class="title-ornament"></div>
+        <p class="section-desc">¿Interesado en una presentación, colaboración o simplemente quieres saber más? ¡Escríbenos!</p>
+      </div>
+      <div class="contacto-grid">
+
+        <div class="contacto-info">
+          <div class="contacto-items">
+
+            <!-- CORREO: Edita el href y el texto -->
+            <a class="contacto-item" href="mailto:aromadecafe@correo.com">
+              <span class="contacto-icon">✉</span>
+              <div>
+                <span class="contacto-label">Correo electrónico</span>
+                <!-- Cambia el correo aquí: -->
+                <span class="contacto-valor">aromadecafe@correo.com</span>
+              </div>
+            </a>
+
+            <!-- TELÉFONO: Edita el href y el texto -->
+            <a class="contacto-item" href="tel:+50600000000">
+              <span class="contacto-icon">☎</span>
+              <div>
+                <span class="contacto-label">Teléfono / WhatsApp</span>
+                <!-- Cambia el teléfono aquí: -->
+                <span class="contacto-valor">+506 0000-0000</span>
+              </div>
+            </a>
+
+            <!-- INSTAGRAM: Edita el href y el nombre de usuario -->
+            <a class="contacto-item" href="https://www.instagram.com/aroma_de_cafemtv/#" target="_blank" rel="noopener">
+              <span class="contacto-icon">📸</span>
+              <div>
+                <span class="contacto-label">Instagram</span>
+                <!-- Cambia el usuario de Instagram aquí: -->
+                <span class="contacto-valor">aroma_de_cafemtv</span>
+              </div>
+            </a>
+
+            <!-- FACEBOOK: Edita el href y el nombre de la página -->
+            <a class="contacto-item" href="https://www.facebook.com/MonteverdeAromadeCaf" target="_blank" rel="noopener">
+              <span class="contacto-icon">👍</span>
+              <div>
+                <span class="contacto-label">Facebook</span>
+                <!-- Cambia la página de Facebook aquí: -->
+                <span class="contacto-valor">Aroma de Café</span>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- BOTÓN PRINCIPAL: Cambia el href al correo o enlace real -->
+          <a href="mailto:aromadecafe@correo.com" class="btn btn-contact">
+            ✉ Enviar mensaje
+          </a>
+        </div>
+
+        <div class="contacto-deco">
+          <div class="contacto-cafe-deco">
+            <div class="cafe-circle-big">☕</div>
+            <p class="contacto-frase">"El folclore es el alma de un pueblo bailando."</p>
+            <p class="contacto-lugar">🇨🇷 Costa Rica</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-icon">☕</span>
+          <span>Aroma de Café</span>
+        </div>
+        <!-- Edita el texto del pie de página aquí -->
+        <p class="footer-text">Compañía Folclórica · Costa Rica · Tradición en cada movimiento</p>
+        <p class="footer-copy">
+          <!-- Cambia el año y el nombre si lo deseas -->
+          &copy; <span id="anio"></span> Aroma de Café. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
